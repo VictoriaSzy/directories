@@ -10,3 +10,4 @@ Write a program that will gather various information about a directory, specific
   - Recursively list the files in any subdirectories, update the total to include the total size of subdirectories
   - Print out the size in a more readable format (like using KB, MB, GB for -byte prefixes)
   - Make it look more like $ ls -l
+ 
