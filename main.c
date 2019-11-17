@@ -16,7 +16,6 @@ int dir_size() {
   while (item) {
     if (item->d_type == DT_REG) {
       stat(item->d_name, &individual) ;
-      //printf("%s\n", item->d_name) ;
       s += individual.st_size ;
     }
     item = readdir(dir) ;
@@ -36,7 +35,6 @@ void list_dirs() {
 }
 
 void list_files() {
-  // only prints
   DIR * d = opendir(".") ; // current directory
   struct dirent * item = readdir(d) ;
   while (item) {
